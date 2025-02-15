@@ -1,0 +1,22 @@
+[project]
+name = "ezsign-py-english"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "kenichi884"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pyserial (>=3.5,<4.0)",
+    "pillow (>=11.1.0,<12.0.0)",
+    "argparse (>=1.4.0,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "ezsign"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
