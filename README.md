@@ -7,7 +7,20 @@ This is a library that communicates via USB serial with Santek Technology Corpor
 
 ## Usage
 
-Connect to a PC via USB cable and check the serial port name. On Windows, check the COM port name that appears in the Device Manager after connection.
+Connect to a PC via USB cable and check the serial port name.
+
+On MacOS, you can find the name of the device in the /dev directory:
+
+    ls /dev/tty.*
+
+For example:
+
+    /dev/tty.Bluetooth-Incoming-Port	/dev/tty.debug-console
+    /dev/tty.usbmodem0000000000
+
+In this case /dev/tty.usbmodem0000000000 is the name you are looking for
+    
+On Windows, check the COM port name that appears in the Device Manager after connection.
 
 On Linux, check the messages log where the name should be listed.
 
